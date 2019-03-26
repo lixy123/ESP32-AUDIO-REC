@@ -85,6 +85,5 @@ LED指示灯-ESP32接线定义
    实测效果: 1米内语音识别成功率90%  2米内语音识别成功率70% 5米内语音识别率50%  更适合短语动词识别处理,比如开灯,关灯等词.
   <img src='https://github.com/lixy123/ESP32-AUDIO-REC/blob/master/IMG_20190208_121616.jpg' />
   
-   演示视频
-   
-  
+   演示视频地址
+   https://github.com/lixy123/ESP32-AUDIO-REC/blob/master/VID_20190208_120846.avi
