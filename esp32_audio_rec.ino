@@ -4,6 +4,9 @@
 #include "esp_system.h"
 #include <WebServer.h>
 #include <Preferences.h>
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <WiFiAP.h>  //必须加上,否则AP模式 配置参数会有问题
 
 const IPAddress apIP(192, 168, 4, 1);
 const char* apSSID = "ESP32SETUP";
@@ -299,7 +302,9 @@ void printparams()
 
 void IRAM_ATTR resetModule() {
   ets_printf("reboot\n");
-  esp_restart_noos();
+  //esp_restart_noos(); 旧api
+
+  esp_restart();
 }
 
 String GetLocalTime()
